@@ -1,0 +1,72 @@
+Notizen vom 30.05.2016
+-----------------------
+
+-> Immer wichtig ein Layout in die verschiedenen Bereiche aufzuteilen und diese zu planen
+-> DIV für die Mittlere section damit bei der OnePager Seite alle Inhalte auf die gleiche Stelle Zentriert werden können.
+-> Article Tag kann verwendet werden um Inhalt zu symbolisieren 
+    # bedarf dennoch aber eine Überschrift h2-h6
+    # Das gleiche trifft beim <section> tag zu
+-> Navigationselemente: Für bessere Semantische bedeutung wird die ungeordnete Liste verwendet
+! Vererbbare/Nicht Vererbbare Eigenschaften
+    # Wie zb. "margin" und "padding" im css
+    # "font" kann vererbt werden
+-> Höhe orientiert sich immer an der Höhe des Elternelementes. Dh ein Prozentualer Wert würde sich nach dem Body element
+-> Höhe am HTML Tag /Element würde sich dann nach dem Viewport richten.
+-> Backgound-images: Mit Prozentualen werten werden die verankerungen von der mitte des Bildes aus genommen, bei absoluten pixel werten wird der abstand von Seiten Kante zur Bildkante definiert
+-> Bilder: Um traffic zu sparen sollte man die Webseite im Bezug auf Bildgrößen immer zur optimieren
+    # Oft nimmt man den gängigen Mittelwert und stellt die Grafik in dieser größe zur verfügung
+        . Qualitätsverlust bei Höheren auflösungen
+        . Dafür bessere performance bei mobilen endgeräten
+-> Background-size: Lässt sich nicht in der Sammeldefinintion "Background" definieren.
+    # Cover: Füllt den ganzen Bereich vollständig aus und schneidet den aus dem Viewport laufenem Bereich weg.
+    # Contain: Versucht immer das Bild in der ganzen Proportion dazustellen.
+-> Größen formatierungen
+    # "rem" beschreibt immer den wert ausgehend von den werten des gesamten dokumentes. "r" für root
+    # "em" beschreibt immer den (prozentualen) wert ausgehend vom aktuell zugewiesenen element 
+! Lineheight von 140% ist eine guter zu verwendender wert.
+-> Boxsizing: 
+    # "content-sizing" (standardoption)
+    # "border-box" Element bleibt definierte größe und padding usw. verringert den Inhaltsbereich
+
+
+
+Notizen vom 31.05.2016
+----------------------
+
+-> Textausrichtung: Im web meistens immer Linksbündig (Konzeptioneller Tipp). Blocksatz (Wie im print Bereich) wird selten genutzt
+-> "Display" css option: https://wiki.selfhtml.org/wiki/Display 
+-> "color: inherit;" Bedeutet
+!  www.flatuicolors.com für Farben des modernen Webdesigns. 
+-> Schriftgrößen: Best-practice maximal 4 verschiedene feste schriftgrößen zu verwenden wie zb:
+    # 0.8rem
+    # 1.0rem
+    # 1.5rem
+    # 4.0rem
+-> Praktisch Absätze oder textcontainer mit der Line-heigt zb. 1.0em zu versehen (Die für diesen container zugewiesene schriftgröße) um unnötige Abstände zu entfernen
+    # diese lassen sich dann mit padding oder margin manuell versehen/kontrollieren
+-> Debugging: IMMER die DEVELOPER-TOOLS nutzen um den Fehler zu finden!
+    # Werte direkt im browser verändern und zb css Regeln Aktivieren/Deaktivieren um zu sehen ob diese den fehler verursachen
+-> Absolute Positionierung: Wichtig ist immer der Bezugspunkt. Der browser orientiert sich immer an dem nächst höherem nicht-statischem Element
+    # Der Startwrapper(im codebeispiel0) wird in diesem fall durch "position:relative" der Bezugspunkt
+-> Farben:
+    # RGBA ist ein farbwert wo ein konfigurierbarer Alpha kanal verfügbar ist
+    # opacity: kann das gesamte Element transparent machen (macht alle kinderelemente ebenfalls transparent)
+-> Funtionen wie "-webkit" oder"-moz" prefixe sind keine W3C konforme funktionen
+-> "display: inline-block" hat standardmäßig einen kleinen Abstand nach links und nach rechts 
+    # Nützlich wenn ein paar pixel extra nicht wichtig sind
+-> Entwicklungsansätze: "Desktop first" und "Mobile First"
+!  Statt Fully Responsive zu bauen kann man auch noch eine extra variante bauen wie zb www.spiegel.de und www.m.spiegel.de
+!  mansonry java libary - Kachelaufbau
+
+
+
+Notizen vom 01.06.2016
+----------------------
+
+-> Komplette Pfade angeben um eine gute struktur im code zu haben udn die Zugehörigkeit im HTML zu verdeutlichen.
+-> Relative werte die sich nach dem Elternelement richten funktionieren auch bei absolut positionierten Elementen.
+-> Nur nicht-statische Elemente lassen sich einen z-index zuweisen
+    # Wenn man mit Z-index arbeitet sollte man einen überblick erstellen in welcher schicht sich Elemente befinden
+-> "display: inline-block" lässt noch größeneigenschaften aber lässt auch inline eigenschaften wie "text-align" zu.
+
+    
