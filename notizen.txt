@@ -69,4 +69,29 @@ Notizen vom 01.06.2016
     # Wenn man mit Z-index arbeitet sollte man einen überblick erstellen in welcher schicht sich Elemente befinden
 -> "display: inline-block" lässt noch größeneigenschaften aber lässt auch inline eigenschaften wie "text-align" zu.
 
+
+
+Notizen vom 06.06.2016
+----------------------
+
+! Nützliche Biblotheken: 
+    # Bilderslider "flickity" java script libary
     
+
+
+Notizen vom 07.06.2016
+----------------------
+
+*** Less ***
+-> 
+    
+
+
+Notizen vom 08.06.2016
+----------------------
+
+-> Erweiterungen am Dokument vornehmen
+    # "pricing-wrapper"
+    # "buy-wrapper"
+-> Metanavigation: Eine Navigation die nicht zum Kerninhalt der Seite zählt.
+-> 

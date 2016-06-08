@@ -1,0 +1,128 @@
+//main: style.less
+
+/*----------------------
+        Content
+----------------------*/
+
+#support-wrapper {
+    position: fixed;
+    top: 50px;
+    right: -210px;
+    width: 210px;
+    background-color: @interactionColor;
+    color: #fff;
+    z-index: 9999;
+    padding: 25px;
+    box-sizing: border-box;
+    .transition(right 500ms);
+    h2 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .support-btn {
+        .rotate(-90deg);
+        position: absolute;
+        left: -61px;
+        top: 18px;
+        padding: 10px;
+        background-color: @interactionColor;
+    }
+    &:hover {
+        right: 0;
+    }
+}
+
+#start-wrapper {
+    width: 100%;
+    height: 100%;
+    /* Standard farbe falls bild nicht geladen werden kann, bild, verankerung auf mittig (mittlerere Bildausschnitt)*/
+    background: #000 url(../img/background.jpg) center center;
+    background-size: cover;
+    padding-top: 15%;
+    box-sizing: border-box;
+    position: fixed;
+    .content {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        h1 {
+            font-size: 4.0rem;
+            line-height: 1.0em;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 1.0em;
+            margin-top: 10px;
+        }
+    }
+}
+
+#nav-wrapper {
+    margin-top: -60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    nav {
+        ul {
+            .clearfix();
+            li {
+                /*Bezugspunkt für den Hover Balken schaffen*/
+                position: relative;
+                float: left;
+                width: 25%;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                list-style: none;
+                margin: 15px 0;
+                border-right: 1px solid #000;
+                box-sizing: border-box;
+                &:last-of-type {
+                    border-right: none;
+                }
+                &:hover {
+                    .nav-hover {
+                        height: 5px;
+                    }
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                .nav-hover {
+                    height: 0px;
+                    width: 100%;
+                    background-color: @interactionColor;
+                    position: absolute;
+                    top: -15px;
+                    left: 0;
+                    .transition(height 250ms);
+                }
+            }
+        }
+    }
+}
+
+#info-wrapper {
+    .info-divider {
+        position: relative;
+        height: 420px;
+        background: #000 url("../img/background2.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .content {
+        p {
+            width: 50%;
+            text-align: left;
+            font-size: 1.5rem;
+            line-height: 1.4em;
+            display: inline-block;
+            color: #fff;
+        }
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+//main: style.less
+
+/*----------------------
+        Mixins
+----------------------*/
+
+.transition(...) {
+    transition: @arguments;
+    -moz-transition: @arguments;
+    -webkit-transition: @arguments;
+}
+
+.transform(...) {
+    transform: @arguments;
+    -moz-transform: @arguments;
+    -webkit-transform: @arguments;
+}
+
+.rotate(@deg) {
+    transform: rotate(@deg);
+}
+
+//Definiert automatisch ein Pseudoelement am ende des elementes wo das mixin verwendet werden
+.clearfix() {
+    &:after {
+        clear: both;
+        //Braucht content damit es vom HTML wahrgenommen wird
+        content: "";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+}
