@@ -94,4 +94,7 @@ Notizen vom 08.06.2016
     # "pricing-wrapper"
     # "buy-wrapper"
 -> Metanavigation: Eine Navigation die nicht zum Kerninhalt der Seite zählt.
--> 
+-> Section Tag erwartet überschrift
+-> Article Tag erwartet ebenfalls ne überschrift
+I  "Simple-Grid" systeme vorgefertigte Framework für gittersystemen. (Standard 12 Columns)
+

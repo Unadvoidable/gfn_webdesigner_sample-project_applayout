@@ -201,6 +201,61 @@ body {
 #info-wrapper .content:last-of-type {
   text-align: right;
 }
+#pricing-wrapper {
+  background-color: #2980b9;
+  color: #ffffff;
+  text-align: center;
+}
+#pricing-wrapper .content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#pricing-wrapper .content:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+#pricing-wrapper .content article {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+#pricing-wrapper .content article:last-child {
+  margin-right: 0;
+}
+#pricing-wrapper .content article div {
+  height: 75px;
+  margin-bottom: 20px;
+}
+#pricing-wrapper .content article div.education {
+  background: #2980b9 url(../img/education.png) center center no-repeat;
+}
+#pricing-wrapper .content article div.advanced {
+  background: #2980b9 url(../img/advanced.png) center center no-repeat;
+}
+#pricing-wrapper .content article div.premium {
+  background: #2980b9 url(../img/premium.png) center center no-repeat;
+}
+#pricing-wrapper .content article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+#pricing-wrapper .content article p {
+  font-size: 1rem;
+  line-height: 1.4em;
+  padding: 25px;
+  height: 100px;
+}
+#pricing-wrapper .content article p:last-child {
+  height: auto;
+  font-size: 2.5rem;
+  line-height: 1.0em;
+  border-top: 1px solid #ffffff;
+  display: inline-block;
+}
 /*----------------------
         Media
 ----------------------*/

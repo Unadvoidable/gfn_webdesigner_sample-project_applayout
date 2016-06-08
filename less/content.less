@@ -126,3 +126,60 @@
         }
     }
 }
+
+#pricing-wrapper {
+    background-color: @secondaryColor;
+    color: @mainWhite;
+    text-align: center;
+    .content {
+        .clearfix();
+        max-width: 1000px;
+        margin: 0 auto;
+        article {
+            float: left;
+            // Sums up to 96% with 3 Elements
+            width: 32%;
+            // Use on 2 first elements
+            margin-right: 2%;
+            // Deletes Margin on last element
+            &:last-child {
+                margin-right: 0;
+            }
+            div {
+                height: 75px;
+                margin-bottom: 20px;
+                //Bezogen auf den DIV container mit der klasse education
+                &.education {
+                    background: @secondaryColor url(../img/education.png) center center no-repeat;
+                }
+                &.advanced {
+                    background: @secondaryColor url(../img/advanced.png) center center no-repeat;
+                }
+                &.premium {
+                    background: @secondaryColor url(../img/premium.png) center center no-repeat;
+                }
+            }
+            h3 {
+                font-size: @mediumFontSize;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: @smallFontSize;
+                line-height: @lineHeight;
+                padding: 25px;
+                height: 100px;
+                &:last-child {
+                    height: auto;
+                    font-size: @mediumFontSize + 1;
+                    line-height: 1.0em;
+                    border-top: 1px solid @mainWhite;
+                    display: inline-block
+                }
+            }
+        }
+    }
+}
+
+#buy-wrapper {}
+
+#footer-wrapper {}
