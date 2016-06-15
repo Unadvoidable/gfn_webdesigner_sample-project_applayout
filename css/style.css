@@ -61,7 +61,7 @@ body {
 }
 .download-btn:hover {
   background-color: #fff;
-  color: #ccc;
+  color: #e74c3c;
 }
 .overlay {
   top: 0;
@@ -255,6 +255,87 @@ body {
   line-height: 1.0em;
   border-top: 1px solid #ffffff;
   display: inline-block;
+}
+#pricing-wrapper .content article p::selection {
+  color: greenyellow;
+  background-color: black;
+  text-shadow: 0.5px 0.5px #aaa;
+}
+#buy-wrapper .content {
+  text-align: center;
+}
+#buy-wrapper .content h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#buy-wrapper .content ul {
+  list-style: none;
+  margin-bottom: 75px;
+}
+#buy-wrapper .content ul li {
+  margin-bottom: 10px;
+}
+#buy-wrapper .content ul li:last-child {
+  margin-bottom: 0;
+}
+#buy-wrapper .content .download-btn:hover {
+  border: 1px solid #000000;
+}
+#footer-wrapper {
+  text-align: center;
+  padding: 50px;
+  border-top: 1px solid #cccccc;
+}
+#footer-wrapper nav ul {
+  list-style: none;
+}
+#footer-wrapper nav ul li {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  background: indianred url(../img/sprite.png) no-repeat;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+#footer-wrapper nav ul li:last-child {
+  margin-right: 0;
+}
+#footer-wrapper nav ul li.facebook {
+  background-position: -13px -17px;
+  background-color: #3b5998;
+}
+#footer-wrapper nav ul li.facebook:hover {
+  background-position: -13px -58px;
+}
+#footer-wrapper nav ul li.youtube {
+  background-position: -53px -18px;
+  background-color: #cd201f;
+}
+#footer-wrapper nav ul li.youtube:hover {
+  background-position: -53px -59px;
+}
+#footer-wrapper nav ul li.twitter {
+  background-position: -104px -17px;
+  background-color: #55acee;
+}
+#footer-wrapper nav ul li.twitter:hover {
+  background-position: -104px -58px;
+}
+#footer-wrapper nav ul li:hover {
+  background-color: #ffffff;
+}
+#footer-wrapper nav ul li a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+#footer-wrapper nav + p {
+  margin-top: 25px;
+  font-weight: 400;
 }
 /*----------------------
         Media

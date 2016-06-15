@@ -175,11 +175,98 @@
                     border-top: 1px solid @mainWhite;
                     display: inline-block
                 }
+                &::selection {
+                    color: greenyellow;
+                    background-color: black;
+                    text-shadow: 0.5px 0.5px #aaa;
+                }
             }
         }
     }
 }
 
-#buy-wrapper {}
+#buy-wrapper {
+    .content {
+        text-align: center;
+        h2 {
+            font-size: @mediumFontSize;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 75px;
+            li {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .download-btn {
+            &:hover {
+                border: 1px solid @mainBlack;
+            }
+        }
+    }
+}
 
-#footer-wrapper {}
+#footer-wrapper {
+    text-align: center;
+    padding: 50px;
+    border-top: 1px solid lighten(@mainBlack, 80%);
+    nav {
+        ul {
+            list-style: none;
+            li {
+                //Vorteil: Wird zusammen mti dem text zentriert, 
+                //Nachteil: hat einen nicht definierbaren abstand von element zu element
+                display: inline-block;
+                width: 47px;
+                height: 47px;
+                background: indianred url(../img/sprite.png) no-repeat;
+                margin-right: 10px;
+                // Macht das Element kreisrund
+                border-radius: 50%;
+                .transition(all 250ms);
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.facebook {
+                    background-position: -13px -17px;
+                    background-color: #3b5998;
+                    &:hover {
+                        background-position: -13px -58px;
+                    }
+                }
+                &.youtube {
+                    background-position: -53px -18px;
+                    background-color: #cd201f;
+                    &:hover {
+                        background-position: -53px -59px;
+                    }
+                }
+                &.twitter {
+                    background-position: -104px -17px;
+                    background-color: #55acee;
+                    &:hover {
+                        background-position: -104px -58px;
+                    }
+                }
+                &:hover {
+                    background-color: @mainWhite ;
+                }
+                a {
+                    // Blockelement damit sich höhe und breite einstellen lassen. Sosnt orientiert sich das  am inhalt und ein inhalt ist derzeit nicht verfügbar
+                    display: block;
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+    nav + p {
+        margin-top: 25px;
+        font-weight: 400;
+    }
+}

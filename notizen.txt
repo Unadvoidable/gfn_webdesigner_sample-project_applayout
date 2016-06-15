@@ -98,3 +98,17 @@ Notizen vom 08.06.2016
 -> Article Tag erwartet ebenfalls ne überschrift
 I  "Simple-Grid" systeme vorgefertigte Framework für gittersystemen. (Standard 12 Columns)
 
+
+
+Notizen vom 14.06.2016
+----------------------
+
+-> Gearbeitet mit: "BuyWrapper"
+-> "border: (breite) (border-style) (farbe);"
+-> Image-Sprite: Man verschiebt ein großes Bild auf einen Ausschnitt des Bildes den man Benötigt. Dies könnten zum beispiel
+    # Am besten mit Festen Pixelwerten Arbeiten
+!  "www.socicon.com" Vectorgrafiken Schrift Iconssets 
+!  "www.flaticon.com" weitere Vektorgrafiken
+-> "lighten(farbe, prozentwert%)" um Farben aufzuhellen
+-> Haupteigenschaften bevor den eigenschaften der Pseudoklassen definieren, die eigentschaften der hauptklasse die eigenschaften der pseudoklassen wieder überschreiben
+
