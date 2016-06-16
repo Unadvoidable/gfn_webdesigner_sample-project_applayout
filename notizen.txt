@@ -1,6 +1,5 @@
 Notizen vom 30.05.2016
 -----------------------
-
 -> Immer wichtig ein Layout in die verschiedenen Bereiche aufzuteilen und diese zu planen
 -> DIV für die Mittlere section damit bei der OnePager Seite alle Inhalte auf die gleiche Stelle Zentriert werden können.
 -> Article Tag kann verwendet werden um Inhalt zu symbolisieren 
@@ -32,7 +31,6 @@ Notizen vom 30.05.2016
 
 Notizen vom 31.05.2016
 ----------------------
-
 -> Textausrichtung: Im web meistens immer Linksbündig (Konzeptioneller Tipp). Blocksatz (Wie im print Bereich) wird selten genutzt
 -> "Display" css option: https://wiki.selfhtml.org/wiki/Display 
 -> "color: inherit;" Bedeutet
@@ -62,7 +60,6 @@ Notizen vom 31.05.2016
 
 Notizen vom 01.06.2016
 ----------------------
-
 -> Komplette Pfade angeben um eine gute struktur im code zu haben udn die Zugehörigkeit im HTML zu verdeutlichen.
 -> Relative werte die sich nach dem Elternelement richten funktionieren auch bei absolut positionierten Elementen.
 -> Nur nicht-statische Elemente lassen sich einen z-index zuweisen
@@ -73,7 +70,6 @@ Notizen vom 01.06.2016
 
 Notizen vom 06.06.2016
 ----------------------
-
 ! Nützliche Biblotheken: 
     # Bilderslider "flickity" java script libary
     
@@ -81,7 +77,6 @@ Notizen vom 06.06.2016
 
 Notizen vom 07.06.2016
 ----------------------
-
 *** Less ***
 -> 
     
@@ -89,7 +84,6 @@ Notizen vom 07.06.2016
 
 Notizen vom 08.06.2016
 ----------------------
-
 -> Erweiterungen am Dokument vornehmen
     # "pricing-wrapper"
     # "buy-wrapper"
@@ -102,8 +96,7 @@ I  "Simple-Grid" systeme vorgefertigte Framework für gittersystemen. (Standard 
 
 Notizen vom 14.06.2016
 ----------------------
-
--> Gearbeitet mit: "BuyWrapper"
+-> Gearbeitet mit: "BuyWrapper", "footer-wrapper" und image-sprite
 -> "border: (breite) (border-style) (farbe);"
 -> Image-Sprite: Man verschiebt ein großes Bild auf einen Ausschnitt des Bildes den man Benötigt. Dies könnten zum beispiel
     # Am besten mit Festen Pixelwerten Arbeiten
@@ -111,4 +104,20 @@ Notizen vom 14.06.2016
 !  "www.flaticon.com" weitere Vektorgrafiken
 -> "lighten(farbe, prozentwert%)" um Farben aufzuhellen
 -> Haupteigenschaften bevor den eigenschaften der Pseudoklassen definieren, die eigentschaften der hauptklasse die eigenschaften der pseudoklassen wieder überschreiben
+
+
+
+Notizen vom 15.06.2016
+----------------------
+-> Transformationen
+    # rotate
+    # scale
+    # skew
+    # translate: Versatz nur optisch, zum animieren von reinfade effekten o. vergleichbarem. "transform: translate([horizontal px/%], [vertikal px/%])
+-> "transform-origin": Ankerpunkt der transformation
+-> Filter Effects
+-> "www.tympanus.net/codrops": Tutorials zu nutzerinterface, inspiration von anwendung neuster web-technologien
+-> Keyframes: Eigenschaften definieren die sich zwischen gesetzten Zeitpunken verändern.
+-> Animation verknüpft den keyframe
+
 
