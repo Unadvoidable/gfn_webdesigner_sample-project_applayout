@@ -121,3 +121,38 @@ Notizen vom 15.06.2016
 -> Animation verknüpft den keyframe
 
 
+
+Notizen vom 15.06.2016
+----------------------
+*** Responsive WEBdesign - Mediaquerys ***
+-> HTML: Ist grundlegend Responsive
+?  WEBseite so designen das sie auch durch HTML angemessen aussieht wenn das CSS nicht geladen werden kann
+-> Mobile browser interpretiert seinen inhalt auf eine Breite von 960px
+    # Dies skaliert objekte "verkehrt"
+    # Deaktivieren lässt sich dies über einen metatag: "<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+-> Adaptive Webdesign: Direkte sprünge im Layout definieren (Breakpoints)
+!  Best-pratice: Am Besten nutzt man eine Kombination aus beiden Ansätzen um die WEBseite auf verschiedene browser anzupassen.
+-> User agent teilt dem Server mit welchen Typ browser der Nutzer hat und schickt die Desktop- oder Mobil-variante.
+    # Diese Varriante ist dennoch technisch sehr aufwändig
+!  Testumgebung: www.Browserstack.com - Testen verschiedener browser mit verschiedenen Systemen.
+-> Breakpoints/Mediaquery: "@media [... all/screen/print/speech ...] and (max-width: 320px) and (orientation: [... portrait/landscape ...]){ ... CSScode ...};"
+    # all    : Für alle Formate
+    # screen : Für Desktop
+    # print  : Für Druck optimieren
+    # speech : Für WEBsites die auf sprachausgaben optimiert sind
+-> Css Dokumente unter bestimmten Bediungen einbinden: "    <link rel="stylesheet" href="./css/print.css" media="print">"
+    # Dann wird dieses Stylesheet erst geladen wenn es eine Druckausgabe ist
+-> Mediaquerys haben eine höhere Gewichtung als normale definitionen und können daher genutzt werden um andere Eigentschaften für einen spezifischen Zustand zu überschreiben.
+
+*** Änderungen am Code ***
+-> Erster Schritt. abstände verringern ab Tabletbreite
+-> Button auf max-width = 100% des elternelementes
+-> Textblöcke ab 600px auto breite
+
+
+
+
+
+
+
+

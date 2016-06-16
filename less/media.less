@@ -3,3 +3,42 @@
 /*----------------------
         Media
 ----------------------*/
+
+@media (max-width: 780px){
+    .content{
+        padding: 100px 25px;
+    }   
+    #start-wrapper{
+        .content{
+            padding: 100px 50px;
+        }
+    }
+}
+
+// Textblöcke vergrößern
+@media (max-width: 600px){
+    #info-wrapper{
+        .content{
+            p{
+                width: auto;
+            }
+        }
+    }
+    
+    #pricing-wrapper{
+        .content{
+            article{
+                float: none;
+                width: auto;
+                max-width: 400px;
+                margin: 0 auto 100px auto;
+                
+                &:last-child{
+                    margin-right:auto;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
