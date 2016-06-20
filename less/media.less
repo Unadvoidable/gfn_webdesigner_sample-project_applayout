@@ -4,41 +4,75 @@
         Media
 ----------------------*/
 
-@media (max-width: 780px){
-    .content{
+@media (max-width: 780px) {
+    .content {
         padding: 100px 25px;
-    }   
-    #start-wrapper{
-        .content{
+    }
+    #start-wrapper {
+        .content {
             padding: 100px 50px;
         }
     }
 }
 
 // Textblöcke vergrößern
-@media (max-width: 600px){
-    #info-wrapper{
-        .content{
-            p{
+@media (max-width: 600px) {
+    #nav-wrapper {
+        font-size: @miniFontSize; //overwrite child 0.8rem
+    }
+    #info-wrapper {
+        .content {
+            p {
                 width: auto;
             }
         }
     }
-    
-    #pricing-wrapper{
-        .content{
-            article{
+    #pricing-wrapper {
+        .content {
+            article {
                 float: none;
                 width: auto;
                 max-width: 400px;
                 margin: 0 auto 100px auto;
-                
-                &:last-child{
-                    margin-right:auto;
+                &:last-child {
+                    margin-right: auto;
                     margin-bottom: 0;
+                }
+                div {
+                    margin-bottom: 10px;
+                }
+                p {
+                    padding: 0;
+                    min-height: auto;
+                    &:last-child {
+                        margin-top: 15px;
+                        padding-top: 15px;
+                    }
                 }
             }
         }
     }
 }
 
+// Navigationsleiste oben Fixieren
+@media (max-width: 480px) {
+    #nav-wrapper {
+        position: fixed;
+        z-index: 9999;
+        width: 100%; // Bezieht sich auf das ElternElement
+        top: 0;
+        left: 0;
+        margin-top: 0px;
+    }
+    #support-wrapper{
+        font-size: @miniFontSize;
+        width: 180px;
+        right: -180px;
+        top: 100px;
+        .support-btn{
+            padding: 5px 10px;
+            top: 20px;
+            left: -48px
+        }
+    }
+}

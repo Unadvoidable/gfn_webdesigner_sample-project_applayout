@@ -151,8 +151,9 @@ Notizen vom 15.06.2016
 
 
 
-
-
-
-
+Notizen vom 20.06.2016
+----------------------
+*** Responsive WEBdesign - Mediaquerys ***
+-> Gewichtung der eigenschaft hängt von der Spezifizierung des Selektors ab und ist somit auch wichtig um herrauszufinden wie spezifisch man seinen Selektor definieren muss um einen Wert zu überschreiben.
+-> 
 
